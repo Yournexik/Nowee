@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0d1b2a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+header {
+  background: #1b263b;
+  border-bottom: 3px solid #415a77;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #778da9;
+}
+
+.ufo-icon {
+  margin-right: 8px;
+  font-size: 1.9rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.25s;
+}
+
+nav a:hover {
+  color: #a3c9ff;
+}
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
+
+.featured-article {
+  background: #1b263b;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #415a77;
+}
+
+.featured-article h2 {
+  color: #a3c9ff;
+  margin: 0 0 16px 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #415a77;
+  padding-bottom: 8px;
+}
+
+.featured-article p {
+  margin-bottom: 24px;
+  color: #c9d1d9;
+}
+
+.sidebar {
+  background: #1b263b;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #415a77;
+}
+
+.newsletter h3 {
+  color: #a3c9ff;
+  margin-bottom: 18px;
+}
+
+.newsletter input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #0d1b2a;
+  border: 1px solid #415a77;
+  color: white;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  width: 100%;
+  padding: 12px;
+  background: #415a77;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.newsletter button:hover {
+  background: #778da9;
+}
+
+.gender {
+  margin: 25px 0;
+}
+
+.gender p {
+  margin-bottom: 12px;
+  color: #a3c9ff;
+}
+
+.gender label {
+  display: block;
+  margin: 8px 0;
+  color: #c9d1d9;
+}
+
+.submit-btn {
+  background: #778da9 !important;
+}
+
+.submit-btn:hover {
+  background: #9bb8e3 !important;
+}
+
+footer {
+  background: #1b263b;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 3px solid #415a77;
+  color: #778da9;
+  font-size: 0.95rem;
+}
+
+/* responsywność – na mniejszych ekranach jedna kolumna */
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
