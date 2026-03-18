@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFO Anomalies</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">👽 UFO Anomalies 🛸</div>
+            <nav>
+                <a href="#">Strona główna</a>
+                <a href="#">Galeria</a>
+                <a href="#">O nas</a>
+                <a href="#">Kontakt</a>
+            </nav>
+        </header>
+
+        <div id="main-wrapper">
+            <!-- Artykuły -->
+            <div class="articles">
+                <article>
+                    <h2>Przykładowy artykuł strony vol.1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam impedit consequuntur fuga. Tempore veritatis aliquid accusantium eveniet. Nam libero voluptate velit optio, modi atque amet odio dolorem fuga illum, facilis incidunt vitae esse. Cupiditate, consequatur vel voluptatum harum illum facilis maiores, pariatur assumenda sit illo deleniti provident, et quaerat exercitationem.</p>
+                </article>
+                <article>
+                    <h2>Przykładowy artykuł strony vol.2</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam impedit consequuntur fuga. Tempore veritatis aliquid accusantium eveniet. Nam libero voluptate velit optio, modi atque amet odio dolorem fuga illum, facilis incidunt vitae esse. Cupiditate, consequatur vel voluptatum harum illum facilis maiores, pariatur assumenda sit illo deleniti provident, et quaerat exercitationem.</p>
+                </article>
+                <article>
+                    <h2>Przykładowy artykuł strony vol.3</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam impedit consequuntur fuga. Tempore veritatis aliquid accusantium eveniet. Nam libero voluptate velit optio, modi atque amet odio dolorem fuga illum, facilis incidunt vitae esse. Cupiditate, consequatur vel voluptatum harum illum facilis maiores, pariatur assumenda sit illo deleniti provident, et quaerat exercitationem.</p>
+                </article>
+                <article>
+                    <h2>Przykładowy artykuł strony vol.4</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam impedit consequuntur fuga. Tempore veritatis aliquid accusantium eveniet. Nam libero voluptate velit optio, modi atque amet odio dolorem fuga illum, facilis incidunt vitae esse. Cupiditate, consequatur vel voluptatum harum illum facilis maiores, pariatur assumenda sit illo deleniti provident, et quaerat exercitationem.</p>
+                </article>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Dołącz do newslettera!</h3>
+                <form>
+                    <input type="email" placeholder="Wprowadź adres email" required>
+
+                    <div class="gender-box">
+                        <p>Wybierz swoją płeć</p>
+                        <div class="radio-group">
+                            <label><input type="radio" name="plec"> Mężczyzna</label>
+                            <label><input type="radio" name="plec"> Kobieta</label>
+                            <label><input type="radio" name="plec" checked> Inne</label>
+                        </div>
+                    </div>
+
+                    <div class="robot-box">
+                        <label><input type="checkbox"> Nie jestem robotem</label>
+                    </div>
+
+                    <button type="button">Wyślij zapytanie</button>
+                </form>
+            </aside>
+        </div>
+
+        <footer>TEB Edukacja © 2023 - Imię i nazwisko</footer>
+    </div>
+</body>
+</html>
