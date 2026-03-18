@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFO Anomalies</title>
+    <style>
+        :root {
+            --main-color: #4B4E6D;
+            --secondary-color: #92D8A9;
+            --contrast-color: #F3F3F3;
+            --light-color: #BECEC5;
+            --dark-color: #222222;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--dark-color);
+            color: var(--contrast-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 1vw;
+            padding-bottom: 0;
+        }
+
+        header {
+            width: 100%;
+            background-color: var(--main-color);
+            padding: 1.5rem 0;
+            border-bottom: 2px solid var(--secondary-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--contrast-color);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 8vh;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 0;
+        }
+
+        nav a {
+            flex: 1;
+            text-align: center;
+            text-decoration: none;
+            color: var(--contrast-color);
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav a:hover {
+            background-color: var(--contrast-color);
+            color: var(--main-color);
+        }
+
+        #main-wrapper {
+            display: flex;
+            flex: 1;
+            max-width: 1200px;
+            width: 100%;
+            margin: 2rem auto;
+            gap: 2rem;
+            padding: 0 1rem;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .content {
+            flex: 2;
+            background-color: var(--main-color);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .article {
+            margin-bottom: 3vh;
+        }
+
+        .article h2 {
+            color: var(--contrast-color);
+            font-size: 1.65rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .article p {
+            color: var(--light-color);
+            font-size: 1.05rem;
+            line-height: 1.65;
+            text-align: justify;
+        }
+
+        aside {
+            flex: 1;
+            background-color: aliceblue;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 31vw;
+            max-width: 420px;
+            color: #222;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            height: fit-content;
+        }
+
+        aside h2 {
+            color: var(--main-color);
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 1.8rem;
+            font-weight: 700;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        input[type="email"] {
+            height: 5vh;
+            padding: 1vw 1.2rem;
+            font-size: 1.05rem;
+            border: 1px solid var(--main-color);
+            border-radius: 4px;
+            background-color: white;
+            color: var(--dark-color);
+            box-shadow: 0 0 0 2px rgba(75, 78, 109, 0.3);
+            transition: all 0.3s;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--secondary-color);
+        }
+
+        .gender {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .gender label {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 0.4rem 0;
+        }
+
+        .gender input[type="radio"] {
+            accent-color: var(--main-color);
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+
+        .robot {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin
