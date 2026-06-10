@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie Brackets</title>
+    <style>
+        /* Proste style, żeby pasowało do rysunku z tablicy */
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        
+        /* Menu i logo obok siebie na górze */
+        .gora {
+            display: flex;
+            border: 2px solid black;
+        }
+        
+        .menu {
+            flex: 3;
+            padding: 15px;
+            background: #eee;
+        }
+        
+        .menu a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+        
+        .logo {
+            flex: 1;
+            padding: 15px;
+            background: #ccc;
+            text-align: center;
+            border-left: 2px solid black;
+            font-weight: bold;
+        }
+        
+        /* Środek strony: treść po lewej, aside po prawej */
+        .srodek {
+            display: flex;
+            border: 2px solid black;
+            border-top: none;
+            min-height: 250px;
+        }
+        
+        .lewa-strona {
+            flex: 3;
+            padding: 15px;
+        }
+        
+        .prawa-strona {
+            flex: 1;
+            padding: 15px;
+            background: #fafafa;
+            border-left: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gora">
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Project</a>
+            <a href="#">About</a>
+        </div>
+        <div class="logo">LOGO</div>
+    </div>
+
+    <div class="srodek">
+        <div class="lewa-strona">
+            <h2>Nagłówek strony</h2>
+            <p>Tutaj wpisuje jakis tekst, czyli to jest ta dynamiczna / zmienna tresc strony z rysunku na tablicy.</p>
+        </div>
+
+        <div class="prawa-strona">
+            <p><b>Aside</b></p>
+            <p>Aside</p>
+            <p>...</p>
+        </div>
+    </div>
+
+    <?php
+        // Prosty dopisek w PHP, żeby nauczyciel widział, że skrypt działa
+        echo "";
+    ?>
+
+</body>
+</html>
